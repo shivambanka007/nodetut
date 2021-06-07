@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/login.css" rel="stylesheet">
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="images/logo.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form action="/login/post" method="POST">
+      <input type="text" id="email" class="fadeIn second" name="email" placeholder="email" required>
+      <input type="text" id="password" class="fadeIn third" name="password" placeholder="password" required>
+      <input type="submit" class="fadeIn fourth" id="loginBtn" value="Log In">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+{{#if session.error}} 
+<script type="text/javascript">
+  alert("{{session.error}}");
+</script>
+{{/if}}
+
+<!-- <script type="text/javascript">
+    $('#logiBtn').click(function(event){
+      console.log("Button clicked");
+           event.preventDefault();
+           console.log($("#email").val());
+           console.log($("#password").val());
+           $.ajax({
+              global:false,
+              type: 'POST',
+              url : '/login/post',
+              dataType:'html',
+              data :{
+                  email:$("#email").val(),
+                  password:$("#password").val()
+              },
+              success:function(result){
+                  var message=JSON.parse(result);
+                  console.log(message.msg);
+                  alert(message.msg);
+              },
+              error:function(request,status,error){
+                  alert("Some error occured. Please submit the form again");
+                  console.log("Error occured");
+              }
+           });
+       });
+    </script> -->
+    </html>

@@ -1,0 +1,23 @@
+{
+  "name": "nodetut",
+  "version": "1.0.0",
+  "description": "Training in Nodejs",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "hbs": "^4.1.2",
+    "mongodb": "^3.6.9",
+    "properties-reader": "^2.2.0",
+    "session-file-store": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shivam Kumar Banka",
+  "license": "ISC"
+}
