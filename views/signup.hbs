@@ -21,7 +21,7 @@
 
 {{#if session.error}}
 <script type="text/javascript">
-alert("User already exists. Try signing in..");
+alert("{{session.error}}");
 </script>
 {{/if}}
 {{> ajaxContactUsScript}}

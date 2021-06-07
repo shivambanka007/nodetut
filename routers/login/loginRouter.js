@@ -4,10 +4,9 @@ var loginUtil=require('./loginUtil.js');
 var router =express.Router();
 const redirectHome =(req,res,next)=>{
   if(req.session.userId){
-      console.log("Session user exists")
       res.redirect("/home");
   }
-  else{ console.log("No session user exists");
+  else{ 
     next();}
 }
 router.use(function(req,res,next){
@@ -25,6 +24,7 @@ router.post('/post',redirectHome,function(req,res,next){
     }
     else{
       req.session.error="Username/Password incorrect";
+      req.session.save();
       res.redirect('/login');
     }
    });

@@ -12,7 +12,7 @@ router.post('/post',function(req,res,next){
     signupUtil.createUserIfNotExist(req,(err,isUserCreated)=>{
             console.log("isUserCreated:"+isUserCreated);
             if(isUserCreated==false){
-                req.session.error=true;
+                req.session.error="User already exists. Try logging in";
                 req.session.email=req.body.email;
                 req.session.password=req.body.password;
                 req.session.save();

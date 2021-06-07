@@ -3,10 +3,11 @@
 			<div class="logo"> <img src="images/logo.png" id="icon" alt="User Icon" /></div>
 		</div>
 		<div class="col-sm-6 hidden-xs">
+			<form action="/login/post" method="POST">
 			<div class="row">
 				<div class="col-sm-5">
 					  <div class="form-group">
-					    <input type="email" id="loginEmail" name="email" class="form-control" placeholder="Email Address">
+					    <input type="email" id="loginEmail" name="email" class="form-control" placeholder="Email Address" required>
 					    <div class="login-bottom-text checkbox hidden-sm">
 						    <label>
 						      <input type="checkbox" id="">
@@ -17,15 +18,16 @@
 				</div>	
 				<div class="col-sm-5">
 					 <div class="form-group">
-					    <input type="password" id="loginPassword" class="form-control" placeholder="Password">
+					    <input type="password" id="loginPassword" name="password" class="form-control" placeholder="Password" required>
 					    <div class="login-bottom-text hidden-sm"> Forgot your password?  </div>
 					  </div>
 				</div>
 				<div class="col-sm-2">
 					 <div class="form-group">
-					    <input type="button" value="login" class="btn btn-default btn-header-login">
+					    <input type="submit" value="login" class="btn btn-default btn-header-login">
 					  </div>
 				</div>
 			</div>	
+			</form>
 		</div>
 	</div>
