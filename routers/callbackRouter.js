@@ -15,7 +15,6 @@ var db=mongoUtil.getDb();
 try{
     db.collection(callbackCollection).insertOne(callbackObject,function(err,res){
         if(err) throw err;
-        console.log(callbackObject+" inserted into database");
     });
 }
 catch(error){

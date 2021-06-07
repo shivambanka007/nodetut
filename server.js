@@ -69,9 +69,6 @@ app.get('/',(req,res)=>{
 app.get('/profile',(req,res)=>{
     res.render('profile',{layout:false});
 })
-app.get('/loginfb',(req,res)=>{
-    res.render('login1',{layout:false});
-})
 app.get('/home',redirectLogin,(req,res)=>{
     res.send("<h1>Home</h1><a href='/logout'>Logout</a>")
 })

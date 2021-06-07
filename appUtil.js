@@ -14,6 +14,10 @@ var utilFunctions = {
     },
     isEmpty : function(object){
         return Object.keys(object).length === 0
+    },
+    capitalize : function(stringInput){
+        var capitalised=stringInput[0].toUpperCase()+stringInput.slice(1).toLowerCase();
+        return capitalised;
     }
 }
 module.exports=utilFunctions;

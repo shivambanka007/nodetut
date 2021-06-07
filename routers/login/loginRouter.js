@@ -15,7 +15,7 @@ router.use(function(req,res,next){
     next();
 });
 router.get('/',redirectHome, function(req, res, next) {
-    res.render('login', { title: 'Login Page', layout: false });
+    res.render('signup', { title: 'Login Page', layout: false });
   });
 router.post('/post',redirectHome,function(req,res,next){
    loginUtil.checkUserExistandPassMatch(req,(err,userExists)=>{
