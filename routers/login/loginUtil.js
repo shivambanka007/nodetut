@@ -19,7 +19,7 @@ var loginUser = {
                         //Creating a session for the user
                             // Creating a user object firstly
                             userObj={email:email,password:hashPassword};
-                            req.session.userId=hashPassword+email;
+                            req.session.userId=email;
                             req.signedCookies.user=userObj;
                             req.signedCookies.email=email;
                             req.signedCookies.password=hashPassword;
