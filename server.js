@@ -80,6 +80,10 @@ app.get('/logout',redirectLogin,(req,res)=>{
     });
     res.redirect("/login");
 })
+app.post("/post", (req, res) => {
+    console.log("Connected to React");
+    res.redirect("/");
+  });
 app.use(function(req,res,next){
     req.mongoUtil=mongoUtil;
     next();

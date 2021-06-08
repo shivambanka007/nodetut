@@ -9,7 +9,11 @@ var userInfoSchema = new Schema({
     email : {type :String , required : [true,"Email required"]},
     password : {type :String , required : true , maxLength:256},
     lastSeen : {type : Date, default : Date.now()},
-    birthday : {type : Date,required : true}
+    birthday : {type : Date,required : true},
+    img:{
+        data: Buffer,
+        contentType: String
+    }
 },
 {
     toJSON: {virtuals:true},
