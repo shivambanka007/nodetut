@@ -1,52 +1,109 @@
-	<div class="col-sm-4">
-        <form oninput='p2.setCustomValidity(p2.value != password.value ? "Passwords do not match." : "")' action="/signup/post" method="POST">
-			<div class="">
-				<h3><i class="fa fa-shield"></i> Register now</h3>
-			  	<hr>
-				<div class="form-group">
-				  <label class="control-label" for="">Email Address</label>
-				  <input type="email"  name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control" placeholder="Email Address" required>
-				</div>
-                <div class="form-group">
-				  <label class="control-label" for="">First Name</label>
-				  <input type="text" class="form-control" name="fName" placeholder="First Name" id="Fname" required>
-				</div>
-                <div class="form-group">
-				  <label class="control-label" for="">Last Name</label>
-				  <input type="text" class="form-control" name="lName" placeholder="Last Name" id="Lname" required>
-				</div>
-				<div class="form-group">
-				  <label class="control-label" for="">Mobile</label>
-				  <input type="text" class="form-control" name="mobile" placeholder="Mobile" id="Mobile" required>
-				</div>
-				<div class="form-group">
-                    <label>Gender</label>
-                    <label class="radio-inline"> <input type="radio"  name="gender" value="Female">Female</label>
-                    <label class="radio-inline"><input type="radio" name="gender" value="Male">Male</label>
-                </div>
-                <div class="form-group">
-				  <label class="control-label" for="">Birthday</label>
-				  <input type="date" class="form-control" name="birthday" placeholder="Birthday">
-				</div>
-                <div class="form-group">
-				  <label class="control-label" for="">Password</label>
-				  <input type="password"  name="password" class="form-control"  placeholder="Password" id="Fpassword" required>
-				</div>
-				<div class="form-group">
-				  <label class="control-label" for="">Repeat Password</label>
-				  <input type="password"  name="p2" class="form-control" placeholder="Repeat Password" id="Frptpassword" required>
-				</div>		      
-				<small>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="" required>By clicking Sign Up, you agree to our Terms and that you have read our
-					 Data Use Policy, including our Cookie Use.</label>
-                    </div>
-				</small>	 
-				<div style="height:10px;"></div>
-				<div class="form-group">
-				  <label class="control-label" for=""></label>
-				  <button type="submit" class="btn btn-primary">Sign Up</button>
-				</div>	 
-			</div>
-        </form>
-	</div>
+<div class='col-sm-4'>
+  <form
+    oninput='p2.setCustomValidity(p2.value != password.value ? "Passwords do not match." : "")'
+    action='/signup/post'
+    method='POST'
+  >
+    <div class=''>
+      <h3><i class='fa fa-shield'></i> Register now</h3>
+      <hr />
+      <div class='form-group'>
+        <label class='control-label' for=''>Email Address</label>
+        <input
+          type='email'
+          name='email'
+          pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$'
+          class='form-control'
+          placeholder='Email Address'
+          required
+        />
+      </div>
+      <div class='form-group'>
+        <label class='control-label' for=''>First Name</label>
+        <input
+          type='text'
+          class='form-control'
+          name='fName'
+          placeholder='First Name'
+          id='Fname'
+          required
+        />
+      </div>
+      <div class='form-group'>
+        <label class='control-label' for=''>Last Name</label>
+        <input
+          type='text'
+          class='form-control'
+          name='lName'
+          placeholder='Last Name'
+          id='Lname'
+          required
+        />
+      </div>
+      <div class='form-group'>
+        <label class='control-label' for=''>Mobile</label>
+        <input
+          type='text'
+          class='form-control'
+          name='mobile'
+          placeholder='Mobile'
+          id='Mobile'
+          required
+        />
+      </div>
+      <div class='form-group'>
+        <label>Gender</label>
+        <label class='radio-inline'>
+          <input type='radio' name='gender' value='Female' />Female</label>
+        <label class='radio-inline'><input
+            type='radio'
+            name='gender'
+            value='Male'
+          />Male</label>
+      </div>
+      <div class='form-group'>
+        <label class='control-label' for=''>Birthday</label>
+        <input
+          type='date'
+          class='form-control'
+          name='birthday'
+          placeholder='Birthday'
+        />
+      </div>
+      <div class='form-group'>
+        <label class='control-label' for=''>Password</label>
+        <input
+          type='password'
+          name='password'
+          class='form-control'
+          placeholder='Password'
+          id='Fpassword'
+          required
+        />
+      </div>
+      <div class='form-group'>
+        <label class='control-label' for=''>Repeat Password</label>
+        <input
+          type='password'
+          name='p2'
+          class='form-control'
+          placeholder='Repeat Password'
+          id='Frptpassword'
+          required
+        />
+      </div>
+      <small>
+        <div class='checkbox'>
+          <label><input type='checkbox' value='' required />By clicking Sign Up,
+            you agree to our Terms and that you have read our Data Use Policy,
+            including our Cookie Use.</label>
+        </div>
+      </small>
+      <div style='height:10px;'></div>
+      <div class='form-group'>
+        <label class='control-label' for=''></label>
+        <button type='submit' class='btn btn-primary'>Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
